@@ -1,53 +1,14 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 29: To Do
-===
+[![Build Status](https://travis-ci.com/khuynh92/28-routing-and-testing.svg?branch=master)](https://travis-ci.com/khuynh92/28-routing-and-testing)
 
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas 
-  
-## Learning Objectives  
-* Students will learn about composition vs inheritance
-* Students will learn to compose react components using props
+# LAB 28  - Routing and Testing
 
-## Requirements  
- 
-#### Feature Tasks 
-Refactor and add the following components 
+This project is a basic Note taking app that will create and display notes. 
 
-###### NoteUpdateForm 
-Create a NoteUpdateForm component that inherits a note through props and onSubmit is able to update the App's state with an updated note.
+## To install
+Download this repo and in the root directory, type in to the CLI `npm i` to install all dependencies 
 
-###### Refactor the NoteItem to have the following behavior
-If the user double clicks on the notes content it should switch to the Edit View  
-* Default view  
-  * Display the notes content and a delete button
-  * Display a delete button that will remove the Note from the application's state
-* Edit View 
-  * Show the NoteUpdateForm and a Cancel Button
-    * onSubmit or click of the cancel button in NoteUpdateForm it should switch back to the default view
+## To Run
+Type into the cli of the root directory `npm run watch` to start the react app. A new window will open in your default browser
 
-###### App Component Tree
-Your components should be nested in the following layout  
-``` 
-App
-  NoteCreateForm
-  NoteList
-    NoteItem
-      NoteUpdateForm
-```
-
-#### Test
-* Test NoteCreateForm
-  * Test your onChange handler
-  * Test your onSubmit handler
-* Test NoteItem
-  * Test the NoteItem's ability to remove a note from the App's state
-* Test NoteUpdateForm
-  * Test the NoteUpdatesForm's ability to update a note in the App's state
-
-#### Documentation  
-Write a description of the project in your README.md
+## How To Use the App
+To use the app, Click on Dashboard. Fill in the form with a Title, and Notes. Upon submit, you will be displayed a list of created notes. To Remove notes, simply click on the red x next to the title.

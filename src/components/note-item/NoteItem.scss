@@ -1,0 +1,53 @@
+#note-list {
+  list-style: none;
+}
+
+#note-list li {
+  padding: 2% 0% 2% 0%;
+  display: flex;
+  width: 50%;
+  background-color: lavender;
+  border-radius: 10px;
+}
+
+#note-list li h4 {
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(147, 146, 146);
+}
+
+button:focus {
+  outline:0;
+}
+
+
+#note-list li button {
+  align-self: center;
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(238, 209, 209);
+  border: none;
+  border-radius: 5px;
+  transition: 300ms;
+  color: white;
+}
+
+#note-list li button:hover {
+  background-color: rgb(229, 137, 137);
+}
+
+#note-list li button:active {
+  background-color: rgb(218, 87, 87);
+}
+
+#note-list li p {
+  font-size: 14px;
+  margin: 0% 0% 0% 6%;
+  padding-top: 4%;
+}
+
+#note-list li * {
+  margin-left: 2%;
+  display: inline-block;
+}

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard/> Snapshot Test renders correctly 1`] = `
+Array [
+  <form
+    onSubmit={[Function]}
+  >
+    <label>
+      Title:
+      <br />
+      <input
+        id="title"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </label>
+    <br />
+    <label>
+      Notes:
+      <br />
+      <textarea
+        id="content"
+        onChange={[Function]}
+        required={true}
+        value=""
+      />
+    </label>
+    <br />
+    <input
+      type="submit"
+    />
+  </form>,
+  <ul
+    id="note-list"
+  />,
+]
+`;

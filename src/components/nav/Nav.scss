@@ -1,0 +1,14 @@
+nav ul li * {
+  text-decoration: none;
+  color: rgb(188, 188, 241);
+  transition: 300ms
+}
+
+nav ul li *:hover {
+  color: rgb(164, 121, 165);
+}
+
+
+.selected {
+  color: rgb(164, 121, 165);
+}

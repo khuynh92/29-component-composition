@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class NoteCreateForm extends Component {
   render() {
     return (
-      <form onSubmit={this.props.handleSubmit}>
+      <form onSubmit={this.props.handleSubmit} onChange={this.props.handleChange}>
         <label>
           Title:
           <br />
@@ -13,7 +13,7 @@ export default class NoteCreateForm extends Component {
         <label>
           Notes:
           <br />
-          <textarea required value={this.props.content} onChange={this.props.handleChange} id='content' />
+          <textarea required value={this.props.content} id='content' />
         </label>
         <br />
         <input type="submit" />

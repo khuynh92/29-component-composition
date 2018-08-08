@@ -3,6 +3,7 @@
 exports[`<Dashboard/> Snapshot Test renders correctly 1`] = `
 Array [
   <form
+    onChange={[Function]}
     onSubmit={[Function]}
   >
     <label>
@@ -22,7 +23,6 @@ Array [
       <br />
       <textarea
         id="content"
-        onChange={[Function]}
         required={true}
         value=""
       />

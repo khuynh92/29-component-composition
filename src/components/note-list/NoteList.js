@@ -9,7 +9,7 @@ export default class NoteList extends Component {
   render() {
     return (
       <ul id="note-list">
-        <NoteItem removeNote={this.props.removeNote} notes={this.props.notes} />
+        {this.props.notes.map(note => <NoteItem key={note.id} note={note} {...this.props}/>)}
       </ul>
     );
   }

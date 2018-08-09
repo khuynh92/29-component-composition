@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/khuynh92/28-routing-and-testing.svg?branch=master)](https://travis-ci.com/khuynh92/28-routing-and-testing)
 
-# LAB 29  - To Do
+# LAB 29  - component-composition
 
 This project is a basic Note taking app that will create and display notes. 
 

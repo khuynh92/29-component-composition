@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/khuynh92/29-component-composition.svg?branch=master)](https://travis-ci.com/khuynh92/29component-composition)
+[![Build Status](https://travis-ci.com/khuynh92/29-component-composition.svg?branch=master)](https://travis-ci.com/khuynh92/29-component-composition)
 
 
 # LAB 29  - component-composition

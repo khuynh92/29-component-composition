@@ -1,0 +1,17 @@
+#note-list .editing {
+  background-color: rgb(253, 223, 177);
+}
+
+#note-list .editing button{
+  height: 40px;
+  width: 70px;
+  background-color: rgba(229, 137, 137, 0.661)
+}
+
+#note-list .editinghover{
+  background-color: rgb(229, 137, 137)
+}
+
+#note-list input[type="submit"]{
+  cursor: pointer;
+}

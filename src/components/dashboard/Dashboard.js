@@ -51,26 +51,63 @@ export default class Dashboard extends Component {
 
   removeNote = (note) => {
 
-    let arr = [...this.state.notes];
-
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].id === note.id) {
-        arr.splice(i, 1);
-        break;
-      }
-    }
+    let notes = this.state.notes.filter(e => e.id !== note.id);
 
     this.setState({
-      notes: arr,
+      notes,
     }, () => localStorage.state = JSON.stringify(this.state)
     );
   };
+
+  editNote = (note) => {
+    let notes = this.state.notes.map(e => {
+      if (e.id === note.id) {
+        e.editing = true;
+      } else {
+        e.editing = false;
+      }
+      return e;
+    });
+
+    this.setState({
+      notes,
+    });
+  }
+
+  cancelBtn = (id) => {
+    let notes = this.state.notes.map(e => {
+      if (e.id === id) {
+        e.editing = false;
+      }
+      return e;
+    });
+
+    this.setState({
+      notes,
+    });
+  }
+
+  updateNote = (note) => {
+    let notes = this.state.notes.map(e => {
+      if (e.id === note.id) {
+        e.editing = false;
+        e.content = note.content;
+      }
+      return e;
+    });
+
+    this.setState({
+      notes,
+    }, ()=> localStorage.state = JSON.stringify(this.state));
+  }
+
+
 
   render() {
     return (
       <Fragment>
         <NoteCreateForm title={this.state.title} content={this.state.content} handleSubmit={this.addNote} handleChange={this.handleChange} />
-        <NoteList removeNote={this.removeNote} notes={this.state.notes} />
+        <NoteList updateNote={this.updateNote} cancelBtn={this.cancelBtn} editNote={this.editNote} removeNote={this.removeNote} notes={this.state.notes} />
       </Fragment>
 
     );
